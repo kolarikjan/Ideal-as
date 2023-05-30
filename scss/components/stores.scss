@@ -1,0 +1,43 @@
+.stores {
+    padding-top: 2.5rem;
+    @include media("md") {
+        padding-top: 1rem;
+    }
+    h2 {
+        font-weight: 600;
+    }
+    &-table {
+        border: 1px solid #e5e5e5;
+        padding: 4rem;
+        @include media("md") {
+            padding: 3rem;
+        }
+        @include media("xl") {
+            & > .row > div:not(:last-child) {
+                margin-bottom: 2rem;
+            }    
+        }
+        img {
+            max-height: 256px;
+        }
+    }
+    &-textbox {
+        background-image: url(../img/icon-pin-red.png);
+        background-repeat: no-repeat;
+        background-position: top 5px left;
+        padding-left: 2rem;
+        margin-top: 1.5rem;
+        @include media("md") {
+            background-position: top center;
+            padding-left: 0;
+            padding-top: 2.25rem;
+        }
+        p {
+            margin-bottom: 0;
+        }
+        b,strong {
+            font-weight: 700;
+            font-size: 16px;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.section {
+    padding: 6.25rem 0 7.25rem;
+    @include media("lg") {
+        padding: 4rem 0 4rem;
+    }
+    @include media("md") {
+        padding: 3rem 0 3rem;
+    }
+    &-title {
+        margin-bottom: 4.75rem;
+        @include media("md") {
+            margin-bottom: 3rem;
+        }
+        h2 {
+            font-size: 36px;
+            line-height: 60px;
+            font-weight: 600;
+            margin-bottom: 0rem;
+            text-align: center;
+            @include media("sm") {
+                margin-bottom: 1rem !important;
+            }
+        }
+    }
+}

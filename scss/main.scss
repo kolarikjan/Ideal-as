@@ -1,0 +1,33 @@
+// sablonu vytvoril Jan Kolarik
+// www.jan-kolarik.cz
+
+// Defaults
+@import "defaults/variables.scss";
+@import "defaults/resets.scss";
+@import "defaults/functions.scss";
+
+
+// Components
+@import "components/header.scss";
+//@import "components/buttons.scss";
+//@import "components/banners.scss";
+//@import "components/sections.scss";
+//@import "components/services.scss";
+//@import "components/showcase.scss";
+//@import "components/news.scss";
+//@import "components/footer.scss";
+//@import "components/breadcrumb.scss";
+//@import "components/contactform.scss";
+//@import "components/stores.scss";
+
+// Style 
+@media (min-width: map-get($breaks, "xxl")) {
+    .container {
+        max-width: 1430px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+.dropdown-hover:hover .dropdown-hover-menu {
+    display: block !important;
+}

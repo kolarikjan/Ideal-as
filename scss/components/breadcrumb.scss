@@ -1,0 +1,54 @@
+.breadcrumb {
+    padding: 6rem 0 6rem;
+    background-image: url("../img/subpage-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0;
+    @include media("sm") {
+        padding: 4rem 0;
+    }
+    h1 {
+        color: $secondary-color;
+        font-size: 45px;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        text-align: center;
+        @include media("sm") {
+            margin-bottom: 0;
+            font-size: 40px;
+        }
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        a {
+            color: $secondary-color;
+            font-size: 13px;
+            font-weight: 300;
+        }
+        li {
+            &:not(:last-child)::after {
+                content: "|";
+                color: $secondary-color;
+                margin: 0 .75rem;
+            }
+            &:last-child a {
+                font-weight: 500;
+            }
+        }
+        @include media("md") {
+            @include widthFit();
+            margin: 0 auto;
+        }
+        @include media("sm") {
+            display: none;
+        }
+    }
+    @include media("md") {
+        text-align: center;
+    }
+}

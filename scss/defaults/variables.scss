@@ -1,0 +1,20 @@
+$primary-color: #000;
+$primary-color-red: #f73b3c;
+$secondary-color: #fff;
+
+$paragraph-color: #555555;
+
+$background-color: #fff;
+$background-color-grey: #f1f4f8;
+
+$highlight-color: $primary-color-red;
+
+$button-radius: 5px;
+
+$breaks: (
+    "sm": 576px,
+    "md": 768px,
+    "lg": 993px,
+    "xl": 1200px,
+    "xxl": 1600px,
+);

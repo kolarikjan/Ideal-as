@@ -1,0 +1,77 @@
+.button-grey {
+    display: block;
+    border-radius: $button-radius;
+    border: 2px solid $background-color-grey;
+    background-color: $background-color-grey;
+    color: $primary-color;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+    @include widthFit();
+    transition-duration: 0.1s;
+    &:hover {
+        background-color: $background-color;
+        text-decoration: none;
+    }
+}
+.button-arrow-pink {
+    padding: 0.75rem 4rem 0.75rem 1.5rem;
+    background-image: url("../img/arrow-right-pink.png");
+    background-repeat: no-repeat;
+    background-position: right 1.5rem center;
+}
+.button-grey-bordered {
+    display: block;
+    border-radius: $button-radius;
+    border: 2px solid $secondary-color;
+    color: $secondary-color;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0.95rem 1.5rem;
+    @include widthFit();
+    &:hover {
+        background-color: $secondary-color;
+        color: $highlight-color;
+        text-decoration: none;
+    }
+}
+.button-red {
+    display: block;
+    border-radius: $button-radius;
+    border: 2px solid $highlight-color;
+    color: $secondary-color;
+    background-color: $highlight-color;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+    @include widthFit();
+    transition-duration: 0.1s;
+    &:hover {
+        background-color: $secondary-color;
+        color: $highlight-color;
+        text-decoration: none;
+    }
+}
+.button-arrow-red {
+    padding: 0.75rem 5.25rem 0.75rem 1.5rem;
+    background-image: url("../img/arrow-rightLong-white.png");
+    background-repeat: no-repeat;
+    background-position: right 1.5rem center;
+    &:hover {
+        background-image: url("../img/arrow-rightLong-darkRed.png");
+    }
+}
+.button-red-default {
+    &:hover {
+        background-color: $highlight-color;
+        color: $secondary-color;
+        background-image: url("../img/arrow-rightLong-white.png");
+        padding: 0.75rem 6rem 0.75rem 1.5rem;
+    }
+}
+@include media("md") {
+    .button-white {
+        margin: 0 auto;
+    }
+}
