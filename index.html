@@ -21,7 +21,7 @@
 <body>
 
     <div class="header position-relative">
-        <div class="container">
+        <div class="container-fluid">
             <nav class="header-nav navbar navbar-expand-lg navbar-light">
                 <a class="header-logo mb-2" href="#">
                     <img src="img/logo.png" alt="logo" class="img-fluid">
@@ -57,7 +57,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Kontakt</a>
                         </li>
-                        <li class="nav-item header-buttons d-lg-none">
+                        <li class="nav-item header-buttons d-flex justify-content-center align-items-center flex-wrap d-lg-none">
                             <div class="header-languages">
                                 <ul>
                                     <li>
@@ -76,7 +76,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="header-buttons d-none d-lg-block">
+                <div class="header-buttons d-none d-lg-flex">
                     <div class="header-languages">
                         <ul>
                             <li>
@@ -101,15 +101,23 @@
         <div class="owl-carousel owl-homepage">
             <div class="item">
                 <div class="row">
-                    <div class="col-12 col-md-6">
-                        <h2>Váš spolehlivý průvodce ISO normami</h2>
-                        <p>Implementace systémů řízení, poradenství, konzultace a školící činnost v oblasti systémů řízení dle norem ISO.</p>
-                        <a href="#" class="button-red button-arrow-red button-red-default">
-                            Více o Ideal a.s.
-                        </a>    
+                    <div class="col-12 col-lg-6 pe-lg-0">
+                        <div class="container m-lg-0 p-lg-0">
+                            <div class="banner-left">
+                                <h2>Váš spolehlivý průvodce ISO normami</h2>
+                                <p>Implementace systémů řízení, poradenství, konzultace a školící činnost v oblasti systémů řízení dle norem ISO.</p>
+                                <a href="#" class="button-white-bordered button-arrow-white">
+                                    Více o Ideal a.s.
+                                </a>      
+                            </div>    
+                        </div>
                     </div>
-                    <div class="col-12 col-md-6">
-                        <img src="img/section-banner-image.png" alt="banner" class="img-fluid">
+                    <div class="col-12 col-lg-6">
+                        <div class="container m-lg-0 p-lg-0 h-100">
+                            <div class="banner-right">
+                                <img src="img/section-banner-image.png" alt="banner" class="img-fluid">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -118,6 +126,9 @@
     
     <div class="services section">
         <div class="container">
+            <div class="section-title">
+                <h2>Naše produkty a služby</h2>
+            </div>
             <div class="section-content services-content">
                 <div class="row">
                     <div class="col-12 col-md-4">
@@ -129,7 +140,7 @@
                                 <a href="#" class="services-title">ISO Normy</a>
                                 <p class="services-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore ratione voluptatem sequi nesciunt. Neque porro quisquam est ...</p>
                             </div>
-                            <a href="#" class="mt-4">
+                            <a href="#" class="services-arrow">
                                 <img src="img/arrow-right-red.png" alt="arrow">
                             </a>
                         </div>
@@ -143,8 +154,8 @@
                                 <a href="#" class="services-title">Školení</a>
                                 <p class="services-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore ratione voluptatem sequi nesciunt. Neque porro quisquam est ...</p>
                             </div>
-                            <a href="#" class="mt-4">
-                                <img src="img/arrow-skoleni-red.png" alt="arrow">
+                            <a href="#" class="services-arrow">
+                                <img src="img/arrow-right-red.png" alt="arrow">
                             </a>
                         </div>
                     </div>
@@ -157,8 +168,8 @@
                                 <a href="#" class="services-title">GDPR</a>
                                 <p class="services-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore ratione voluptatem sequi nesciunt. Neque porro quisquam est ...</p>
                             </div>
-                            <a href="#" class="mt-4">
-                                <img src="img/arrow-gdpr-red.png" alt="arrow">
+                            <a href="#" class="services-arrow">
+                                <img src="img/arrow-right-red.png" alt="arrow">
                             </a>
                         </div>
                     </div>
@@ -171,8 +182,8 @@
                                 <a href="#" class="services-title">Standardy kvality</a>
                                 <p class="services-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore ratione voluptatem sequi nesciunt. Neque porro quisquam est ...</p>
                             </div>
-                            <a href="#" class="mt-4">
-                                <img src="img/arrow-standardy-red.png" alt="arrow">
+                            <a href="#" class="services-arrow">
+                                <img src="img/arrow-right-red.png" alt="arrow">
                             </a>
                         </div>
                     </div>
@@ -185,8 +196,8 @@
                                 <a href="#" class="services-title">Kybernetická bezpečnost</a>
                                 <p class="services-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore ratione voluptatem sequi nesciunt. Neque porro quisquam est ...</p>
                             </div>
-                            <a href="#" class="mt-4">
-                                <img src="img/arrow-bezpecnost-red.png" alt="arrow">
+                            <a href="#" class="services-arrow">
+                                <img src="img/arrow-right-red.png" alt="arrow">
                             </a>
                         </div>
                     </div>
@@ -199,8 +210,8 @@
                                 <a href="#" class="services-title">Procesní řízení</a>
                                 <p class="services-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore ratione voluptatem sequi nesciunt. Neque porro quisquam est ...</p>
                             </div>
-                            <a href="#" class="mt-4">
-                                <img src="img/arrow-rizeni-red.png" alt="arrow">
+                            <a href="#" class="services-arrow">
+                                <img src="img/arrow-right-red.png" alt="arrow">
                             </a>
                         </div>
                     </div>
@@ -211,45 +222,49 @@
 
     <div class="aboutus section">
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-6 col-xl-5">
-                    <div class="aboutus-textbox pe-xl-4">
-                        <h1>Ideal a.s.</h1>
-                        <p>Společnost Ideal Mělník a.s. zaujímá vedoucí postavení na trhu v oblasti poskytování poradenských a konzultačních služeb dle ISO norem pro zdravotnické laboratoře.</p>
-                        <p>Vedení společnosti a její zaměstnanci se mohou pochlubit širokým spektrem vypracovaných postupů, znalostí a dlouholetých zkušeností, které uplatňují a prohlubují při každodenní spolupráci s našimi zákazníky. Pro všechny naše činnosti máme kvalitně vypracované metodiky, které byly prověřeny praxí u domácích, ale také nadnárodních společností.</p>
-                        <p>Svoji činnost se snažíme neustále zdokonalovat a zkvalitňovat, naši zaměstnanci jsou pravidelně vzděláváni a školeni významnými institucemi a firmami. </p>
+            <div class="section-title">
+                <h1>Ideal a.s.</h1>
+            </div>
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-12 col-xl-5">
+                        <div class="aboutus-textbox pe-xl-5">
+                            <p><b>Společnost Ideal Mělník a.s. zaujímá vedoucí postavení na trhu v oblasti poskytování poradenských a konzultačních služeb dle ISO norem pro zdravotnické laboratoře.</b></p>
+                            <p>Vedení společnosti a její zaměstnanci se mohou pochlubit širokým spektrem vypracovaných postupů, znalostí a dlouholetých zkušeností, které uplatňují a prohlubují při každodenní spolupráci s našimi zákazníky. Pro všechny naše činnosti máme kvalitně vypracované metodiky, které byly prověřeny praxí u domácích, ale také nadnárodních společností.</p>
+                            <p><b>Svoji činnost se snažíme neustále zdokonalovat a zkvalitňovat</b>, naši zaměstnanci jsou pravidelně vzděláváni a školeni významnými institucemi a firmami. </p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-12 col-lg-6 col-xl-7">
-                    <div class="row">
-                        <div class="col-12 col-sm-6 col-md-4">
-                            <div class="aboutus-number">
-                                <p><span>27</span>Let na trhu</p>
+                    <div class="col-12 col-xl-7 mt-5 mt-xl-0">
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-md-4 col-xl-4">
+                                <div class="aboutus-number">
+                                    <p><span>27</span><span>Let na trhu</span></p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-4">
-                            <div class="aboutus-number">
-                                <p><span>121</span>Zákazníků</p>
+                            <div class="col-12 col-sm-6 col-md-4 col-xl-4">
+                                <div class="aboutus-number">
+                                    <p><span>121</span><span>Zákazníků</span></p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-4">
-                            <div class="aboutus-number">
-                                <p><span>1150</span>Realizovaných auditů</p>
+                            <div class="col-12 col-sm-6 col-md-4 col-xl-4">
+                                <div class="aboutus-number">
+                                    <p><span>1150</span><span>Realizovaných auditů</span></p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-4">
-                            <div class="aboutus-number">
-                                <p><span>1421</span>proškolených zaměstnanců</p>
+                            <div class="col-12 col-sm-6 col-md-4 col-xl-4">
+                                <div class="aboutus-number">
+                                    <p><span>1421</span><span>proškolených zaměstnanců</span></p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-4">
-                            <div class="aboutus-number">
-                                <p><span>121</span>Realizovaných certifikací</p>
+                            <div class="col-12 col-sm-6 col-md-4 col-xl-4">
+                                <div class="aboutus-number">
+                                    <p><span>121</span><span>Realizovaných certifikací</span></p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-4">
-                            <div class="aboutus-number">
-                                <p><span>45</span>druhů certifikací</p>
+                            <div class="col-12 col-sm-6 col-md-4 col-xl-4">
+                                <div class="aboutus-number">
+                                    <p><span>45</span><span>druhů certifikací</span></p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -329,68 +344,67 @@
                         </div>
                     </div>
                 </div>
-                <div>
-                    <a href="#" class="news-more">Prohlédněte si <span>ostatní novinky zde</span></a>
-                </div>
             </div>
         </div>
     </div>
 
     <div class="references section section-grey">
         <div class="container">
-            <div class="section-title">
+            <div class="section-title text-center">
                 <h2>Reference</h2>
             </div>
             <div class="section-content">
-                <p>Společnost Ideal Mělník a.s. spolupracovala během své historie s celou řadou společností z různých oborů podnikání:</p>
+                <div class="references-description text-center">
+                    <p>Společnost Ideal Mělník a.s. spolupracovala během své historie s celou řadou společností z různých oborů podnikání:</p>    
+                </div>
                 <div class="references-row">
                     <div class="row">
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-6 col-xl-2">
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-6 col-xl-2">
                             <a href="#">
                                 <img src="img/section-reference-image1.png" alt="reference">
                             </a>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-6 col-xl-2">
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-6 col-xl-2">
                             <a href="#">
                                 <img src="img/section-reference-image2.png" alt="reference">
                             </a>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-6 col-xl-2">
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-6 col-xl-2">
                             <a href="#">
                                 <img src="img/section-reference-image3.png" alt="reference">
                             </a>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-6 col-xl-2">
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-6 col-xl-2">
                             <a href="#">
                                 <img src="img/section-reference-image4.png" alt="reference">
                             </a>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-6 col-xl-2">
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-6 col-xl-2">
                             <a href="#">
                                 <img src="img/section-reference-image5.png" alt="reference">
                             </a>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-6 col-xl-2">
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-6 col-xl-2">
                             <a href="#">
                                 <img src="img/section-reference-image6.png" alt="reference">
                             </a>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-6 col-xl-2">
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-6 col-xl-2">
                             <a href="#">
                                 <img src="img/section-reference-image3.png" alt="reference">
                             </a>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-6 col-xl-2">
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-6 col-xl-2">
                             <a href="#">
                                 <img src="img/section-reference-image5.png" alt="reference">
                             </a>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-6 col-xl-2">
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-6 col-xl-2">
                             <a href="#">
                                 <img src="img/section-reference-image6.png" alt="reference">
                             </a>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-6 col-xl-2">
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-6 col-xl-2">
                             <a href="#">
                                 <img src="img/section-reference-image1.png" alt="reference">
                             </a>

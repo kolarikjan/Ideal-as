@@ -9,8 +9,8 @@
         }
     }
     &-nav {
-        padding: 2.25rem 0;
         width: 100%;
+        padding: 1.25rem 1.5rem;
         @include media("xxl") {
             flex-wrap: wrap;
             @include flexCenter();
@@ -84,8 +84,9 @@
                 }    
                 &-item {
                     color: $primary-color;
-                    transition-duration: 0.1s;
-                    font-size: 14px;
+                    transition-duration: 0.15s;
+                    font-size: 15px;
+                    letter-spacing: 0.025rem;
                     font-weight: 600;
                     &:hover {
                         color: $highlight-color;
@@ -99,10 +100,11 @@
             .nav-link {
                 color: $primary-color;
                 font-size: 15px;
-                font-weight: 700;
+                font-weight: 800;
+                text-transform: uppercase;
                 padding: 0.5rem 1rem;
                 text-decoration: none;
-                letter-spacing: -0.025rem;
+                letter-spacing: 0.0125rem;
                 @include media("lg") {
                     margin-right: 0;
                     padding: 0.4rem 0;
@@ -140,43 +142,32 @@
     &-contact {
         display: flex;
         align-items: center;
-        margin-right: 3rem;
-        &-icon {
-            background-color: $highlight-color;
-            border-radius: 50%;
-            aspect-ratio: 1/1;
-            width: 45px;
-            @include flexCenter();
-            margin-right: 1rem;
-            height: 100%;
-        }
+        margin-left: 4rem;
         &-tel {
             color: $primary-color;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 700;
             display: block;
             text-align: left;
             line-height: 26px;
+            background-image: url("../img/icon-tel-red.png");
+            background-repeat: no-repeat;
+            background-position: left center;
+            padding-left: 1.5rem;
+            transition-duration: 0.15s;
             &:hover {
-                color: $primary-color;
+                text-decoration: none;
             }
         }
-        &-mail {
-            font-size: 14px;
-            display: block;
-            color: $primary-color-red;
-            text-transform: uppercase;
-            font-weight: 500;
-            line-height: 26px;
-        }
-        @include media("sm") {
-            margin-right: 0;
-            margin-bottom: 1rem;
+        @include media("xxl") {
+            margin-left: 1.5rem;
         }
     }
     &-buttons {
+        display: flex;
+        align-items: center;
         white-space: nowrap;
-        margin-left: 3rem;
+        margin-left: 4rem;
         @include media("xxl") {
             margin-left: 0;
         }
@@ -186,6 +177,9 @@
                 justify-content: center;
             }
         }
+        @include media("sm") {
+            margin-top: 0.75rem;
+        }
         &-item {
             transition-duration: 0.1s;
             &:not(:last-child) {
@@ -193,80 +187,31 @@
             }
         }
     }
-    &__contact {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
-        padding: 0.25rem 0;
-        &-title {
-            color: $primary-color;
-            font-size: 13px;
-            font-weight: 500;
-        }
-        &-phone {
-            font-weight: 600;
-            font-size: 16px;
-            color: $highlight-color;
-        }
-        @include media("lg") {
-            margin: .5rem 0 0 0;
-            padding: 0;
-        }
-    }
-    &__subpage {
-        background-image: url("../img/subpage-bg.png");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    &__breadcrumb {
-        background-image: url("../img/bg-subpage.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: 2.5rem 0 6rem;
-        @include media("sm") {
-            background-image: url("../img/bg-subpageMobile.png");
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding: 2.5rem 0 2.5rem;
-        }
-        h1 {
-            font-size: 24px;
-            font-weight: 600;
-            letter-spacing: -0.5px;
-            color: $secondary-color;
-            text-align: center;
-            @include min-media("sm") {
-                display: none;
-            }
-        }
+    &-languages {
         ul {
-            display: flex;
-            justify-content: flex-start;
             list-style: none;
-            @include widthFit();
-            @include media("sm") {
-                display: none;
-            }
+            margin: 0;
+            padding: 0;
+            display: flex;
             li {
                 a {
-                    font-weight: 400;
+                    height: 36px;
+                    width: 36px;
+                    @include flexCenter();
+                    border-radius: 50%;
+                    text-transform: uppercase;
                     font-size: 13px;
-                    color: $secondary-color;
-                }
-                &:not(:last-of-type) {
-                    a {
-                        background-image: url("../img/arrow-breadcrumb.png");
-                        padding-right: 2.25rem;
-                        background-repeat: no-repeat;
-                        background-position: right 8px center;
+                    color: $primary-color;
+                    font-weight: 800;
+                    transition-duration: 0.15s;
+                    &:hover, &.active {
+                        text-decoration: none;
+                        background-color: $background-color-dark;
+                        color: $secondary-color;
                     }
                 }
-                &:last-of-type {
-                    a {
-                        font-weight: 500;
-                    }
+                &:not(:last-child) a {
+                    margin-right: 0.125rem;
                 }
             }
         }

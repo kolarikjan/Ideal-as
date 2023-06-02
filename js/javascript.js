@@ -8,7 +8,7 @@ $(document).ready(function () {
         nav:true,
         navText: ["<img src='img/arrow-banner-left.png' alt='arrow' class='partners-slider'><img src='img/arrow-banner-right.png' alt='arrow' class='partners-slider-hover'>","<img src='img/arrow-banner-left.png' alt='arrow' class='partners-slider'><img src='img/arrow-banner-right.png' alt='arrow' class='partners-slider-hover'>"],
         dots: false,
-        margin:0,
+        margin:1,
         items:1,
     });
 

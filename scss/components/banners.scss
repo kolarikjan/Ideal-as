@@ -1,45 +1,84 @@
 .banner {
+    background-image: url("../img/section-banner-background.png");
     background-repeat: no-repeat;
     background-size: cover;
-    .owl-item img {
-        filter: brightness(0.9);
-        @include media("xl") {
-            height: 450px;
+    padding-top: 10.5rem;
+    @include media("xl") {
+        padding-top: 5rem;
+    }
+    @include media("md") {
+        padding-top: 3rem;
+    }
+    &-right {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        height: 101%;
+        img {
+            max-height: 660px;
+            min-height: 460px;
             object-fit: cover;
+            @include media("xl") {
+                height: 450px;
+                min-height: unset;
+            }
+            @include media("sm") {
+                height: 300px;
+            }
+        }
+        @include media("lg") {
+            margin-bottom: 5rem;
+            height: auto;
+        }
+        @include media("md") {
+            margin-bottom: 3rem;
         }
     }
-    &-text {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        z-index: 99999;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    &-left {
+        max-width: 700px;
+        margin-left: auto;
+        margin-top: 3rem;
+        padding-right: 2rem;
+        padding-bottom: 5rem;
+        @include media("xxl") {
+            max-width: 645px;
+        }
+        @media (max-width: 1400px) {
+            max-width: 555px;
+        }
+        @include media("xl") {
+            max-width: 465px;
+            margin-top: 0;
+        }
+        @include media("lg") {
+            max-width: 100%;
+            margin: 0;
+            padding-right: 0;
+            padding-bottom: 3rem;
+        }
+        @include media("md") {
+            padding-bottom: 2rem;
+        }
         h2 {
             color: $secondary-color;
-            text-transform: uppercase;
-            font-size: 60px;
-            font-weight: 600;
+            font-size: 57px;
+            font-weight: 700;
             margin-bottom: 2rem;
             @include media("xl") {
                 font-size: 48px;
                 margin-bottom: 1.25rem;
             }
             @include media("md") {
-                font-size: 34px;
+                font-size: 40px;
                 margin-bottom: 1rem;
             }
         }
         p {
-            font-size: 19px;
-            line-height: 30px;
+            font-size: 21px;
+            line-height: 32px;
+            letter-spacing: 0.0125rem;
             color: $secondary-color;
-            max-width: 70%;
+            max-width: 90%;
             margin-bottom: 0rem;
             font-weight: 400;
             @include media("lg") {
@@ -49,13 +88,14 @@
             }
         }
         a {
-            margin-top: 3rem;
+            margin-top: 4.5rem;
             @include media("xl") {
                 margin-top: 2rem;
             }
             @include media("md") {
                 margin-left: auto;
                 margin-right: auto;
+                margin-top: 1.5rem;
             }
         }
     }

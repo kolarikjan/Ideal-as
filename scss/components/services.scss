@@ -4,22 +4,16 @@
             margin-bottom: 0;
         }
     }
-    &-content {
-        margin: 0 10rem;
-        @include media("xxl") {
-            margin: 0 5rem;
-        }
-        @include media("lg") {
-            margin: 0;
-        }
-    }
     &-item {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
-        height: 100%;
-        margin: 0 2rem 1rem;
+        background-color: $background-color-grey;
+        border-radius: $button-radius;
+        height: calc(100% - 24px);
+        padding: 2.25rem 2.5rem 3.25rem;
+        margin: 0 0 24px;
         @include media("lg") {
             margin: 0;
         }
@@ -27,22 +21,30 @@
             margin-bottom: 1rem;
             justify-content: flex-start;
             height: auto;
-            margin-bottom: 3rem;
+            margin-bottom: 1rem;
         }
     }
     &-icon {
-        border: 2px solid $background-color-dark;
+        background-color: $background-color;
         border-radius: 50%;
-        width: 135px;
+        width: 80px;
         aspect-ratio: 1/1;
         margin-bottom: 2rem;
         @include flexCenter();
+        @include media("md") {
+            margin: 0 auto 1.5rem;
+        }
     }
     &-title {
         color: $primary-color;
-        font-size: 24px;
+        font-size: 26px;
         font-weight: 700;
-        margin-bottom: 1.25rem;
+        margin-bottom: 1rem;
+        display: block;
+        transition-duration: 0.15s;
+        &:hover {
+            text-decoration: none;
+        }
     }
     &-count {
         font-size: 45px;
@@ -59,14 +61,21 @@
         font-weight: 500;
         margin-bottom: 2rem;
         color: $paragraph-color;
-        font-size: 13px;
-        line-height: 22px;
-        text-align: center;
+        font-size: 16px;
+        line-height: 27px;
     }
-}
-@include media("md") {
-    text-align: center;
-    .button-blue {
-        margin: 0 auto;
+    &-arrow {
+        transition-duration: 0.15s;
+        &:hover {
+            filter: brightness(0);
+        }
+        @include media("md") {
+            display: block;
+            margin: 0 auto;
+            @include widthFit();
+        }
+    }
+    @include media("md") {
+        text-align: center;
     }
 }

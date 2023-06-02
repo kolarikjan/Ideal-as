@@ -7,19 +7,33 @@
         padding: 3rem 0 3rem;
     }
     &-title {
-        margin-bottom: 4.75rem;
-        @include media("md") {
+        margin-bottom: 4rem;
+        @include media("xl") {
             margin-bottom: 3rem;
         }
-        h2 {
-            font-size: 36px;
-            line-height: 60px;
-            font-weight: 600;
+        @include media("md") {
+            margin-bottom: 2rem;
+        }
+        h2, h1 {
+            font-size: 44px;
+            line-height: 55px;
+            font-weight: 700;
             margin-bottom: 0rem;
-            text-align: center;
+            letter-spacing: -0.025rem;
+            @include media("md") {
+                text-align: center;
+            }
             @include media("sm") {
                 margin-bottom: 1rem !important;
             }
         }
+        h1 {
+            color: $highlight-color;
+            font-size: 60px;
+            line-height: 70px;
+        }
+    }
+    &-grey {
+        background-color: $background-color-grey;
     }
 }
